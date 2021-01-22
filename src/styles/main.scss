@@ -1,7 +1,13 @@
 @import "utils";
 @import "fonts";
 @import "typography";
+@import "reset";
+@import "blocks/header.scss";
+@import "blocks/logo.scss";
+@import "blocks/menu.scss";
+@import "blocks/services.scss";
 
 body {
   background: $c-gray;
+  font-family: "Roboto", Helvetica, sans-serif;
 }

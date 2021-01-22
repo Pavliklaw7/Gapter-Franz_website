@@ -1,0 +1,47 @@
+.services {
+  .fas {
+    position: relative;
+    left: 10px;
+    transform: rotate(90deg);
+    padding: 0;
+    margin: 0;
+  }
+
+  &__list {
+    display: none;
+
+    [href="practices.html"] {
+      font-weight: 700;
+    }
+  }
+
+  &:hover {
+    .services__list {
+      display: block;
+    }
+
+    .fas {
+      transform: rotate(0);
+      transition: 0.2s;
+      color: #ff2323;
+    }
+  }
+
+  & li ul {
+    right: 100px;
+    top: 55px;
+    border: #000;
+    min-width: 200px;
+    background-color: $headerBg;
+    position: absolute;
+
+    & li {
+      margin: 20px;
+      border-bottom: 1px solid #ff2323;
+      padding: 10px;
+    }
+  }
+  & li:hover > ul {
+    display: block;
+  }
+}

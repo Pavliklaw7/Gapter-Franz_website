@@ -1,0 +1,22 @@
+.menu {
+  font-size: 1vw;
+  text-transform: uppercase;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+
+    &-item {
+      letter-spacing: 1px;
+    }
+  }
+
+  &__link {
+    &:hover {
+      color: #ff6868;
+      transition: 0.2s;
+    }
+  }
+}
